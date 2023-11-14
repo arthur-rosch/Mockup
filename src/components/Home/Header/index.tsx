@@ -1,5 +1,5 @@
 import { ContainerHeader, ContainerNavigation, ContainerButtons, ButtonLogIn, ButtonSingUp } from "./styles";
-import logoHeader from "../../assets/logo.svg"
+import logoHeader from "../../../assets/logo.svg"
 
 export function Header() {
     return(
