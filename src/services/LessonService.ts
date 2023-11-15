@@ -3,7 +3,7 @@ import { Local } from "./Local";
 import host from "@/utils/host";
 import { CreateLessons } from "@/types";
 
-export class AuthService {
+export class LessonService {
   static async createLesson(createLesson: CreateLessons) {
     const url = `${host()}/createLesson`;
     try {
