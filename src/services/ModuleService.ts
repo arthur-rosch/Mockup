@@ -31,8 +31,8 @@ export class ModuleService {
     }
   }
 
-  static async getLessonsByModuleId(moduleId: string) {
-    const url = `${host()}/lessons/${moduleId}`;
+  static async getAllModules() {
+    const url = `${host()}/modules`;
     try {
       const response = await (await this.getAxiosInstance()).get(url);
       if (response.status === 201) {
