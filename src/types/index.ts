@@ -38,3 +38,22 @@ export interface CreateLessons{
     lessonName: string
     moduleId: string
 }
+
+export interface Lesson {
+    id: string
+    youtubeLink: string
+    lessonName:  string
+    moduleId :   string
+
+}
+
+export interface Module {
+  id: string      
+  moduleName: string
+  totalLessons: number
+  lessons: Lesson[]
+}
+
+export interface CreateModule {
+     moduleName: string
+}
