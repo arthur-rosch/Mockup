@@ -14,10 +14,7 @@ export interface CreateCode {
     email: string
     phoneNumber: string
 }
-export interface VerifyCode{
-    email: string
-    emailCode: string
-}
+
 export interface CodeVerification{
     email: string
     phoneNumber: string

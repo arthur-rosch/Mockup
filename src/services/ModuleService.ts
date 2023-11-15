@@ -3,7 +3,7 @@ import { Local } from "./Local";
 import host from "@/utils/host";
 import { CreateModule } from "@/types";
 
-export class AuthService {
+export class ModuleService {
   static async createModule(createModule: CreateModule) {
     const url = `${host()}/createModule`;
     try {

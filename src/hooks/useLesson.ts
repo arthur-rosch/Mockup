@@ -2,7 +2,7 @@ import { Lesson } from "@/types";
 import { useMutation } from "react-query";
 import { LessonService } from "@/services/LessonService";
 
-export const useCoupon = () => {
+export const useLesson = () => {
   const createLesson = useMutation(async ({ lesson }: { lesson: Lesson }) => {
     const { data, success, error } = await LessonService.createLesson(lesson);
 

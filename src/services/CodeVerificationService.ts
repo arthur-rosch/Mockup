@@ -1,9 +1,9 @@
 import axios from "axios";
 import { Local } from "./Local";
 import host from "@/utils/host";
-import { CreateCode, VerifyCode } from "@/types";
+import { CreateCode } from "@/types";
 
-export class AuthService {
+export class CodeVerificationService {
   static async createCode(createCode: CreateCode) {
     const url = `${host()}/createCode`;
     try {
@@ -87,10 +87,13 @@ export class AuthService {
     }
   }
 
-  static async verifyCode(verifyCode: VerifyCode) {
+  static async verifyCode(email: string, emailCode: string) {
     const url = `${host()}/verifyUser`;
     try {
-      const response = await (await this.getAxiosInstance()).post(url, verifyCode);
+      const response = await (await this.getAxiosInstance()).post(url, {
+        email,
+        emailCode,
+      });
 
       if (response.status === 200) {
         return { data: response.data, success: true };
