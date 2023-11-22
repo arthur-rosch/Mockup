@@ -1,7 +1,9 @@
+import { ContainerModules } from "./styles";
+
 export function Modules(){
     return(
-        <>
-            <h1>Modules</h1>
-        </>
+        <ContainerModules>
+            <img src="" alt="" />
+        </ContainerModules>
     )
 }

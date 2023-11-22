@@ -7,7 +7,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body{
     overflow-x: hidden;
-    background: #fff;
+    background: #141414;
     -webkit-font-smoothing: antialiased;
   }
 `
