@@ -6,7 +6,8 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
   }
   body{
-    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
     background: #fff;
+    -webkit-font-smoothing: antialiased;
   }
 `
